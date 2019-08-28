@@ -1,5 +1,19 @@
 package errorscode
 
+// ErrorStruct - Error Default Struct
+type ErrorStruct struct {
+	Code    string
+	Message string
+}
+
+// GetError - Returns a Default Error Struct with code and message
+func GetError(code string) (result ErrorStruct) {
+	result.Code = code
+	result.Message = Errors[code]
+	return
+}
+
+// Errors - Store errors code and message
 var Errors = map[string]string{
 	// 10xx - General Server or Network issues
 	"1000": "An unknown error occured while processing the request.",
