@@ -27,4 +27,7 @@ var Errors = map[string]string{
 	"1104": "CPF already exists.",
 	"1105": "Username already exists.",
 	"1106": "Insert 2FA code.",
+	"1107": "Insert e-mail code.",
+	"1108": "Invalid Login.",
+	"1109": "Too many attempts.",
 }
