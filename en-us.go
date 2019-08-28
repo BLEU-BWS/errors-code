@@ -12,6 +12,11 @@ func GetError(code string) ErrorStruct {
 	return Errors[code]
 }
 
+// GetErrors - Returns errors colletion
+func GetErrors() map[string]ErrorStruct {
+	return Errors
+}
+
 // Errors - Store errors code and message
 var Errors = map[string]ErrorStruct{
 	// 10xx - General Server or Network issues
