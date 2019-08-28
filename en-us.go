@@ -2,8 +2,8 @@ package errorscode
 
 // ErrorStruct - Error Default Struct
 type ErrorStruct struct {
-	Code    string
-	Message string
+	Code    string `json:"code"`
+	Message string `json:"message"`
 }
 
 // GetError - Returns a Default Error Struct with code and message
