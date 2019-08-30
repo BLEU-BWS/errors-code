@@ -32,5 +32,6 @@ var Errors = map[string]ErrorStruct{
 	"1104": ErrorStruct{"1104", "request-issue", 409, "CPF already exists."},
 	"1105": ErrorStruct{"1105", "request-issue", 409, "Username already exists."},
 	"1106": ErrorStruct{"1106", "request-issue", 401, "Invalid Login."},
+	"1107": ErrorStruct{"1107", "request-issue", 401, "Invalid username or password."},
 	"1109": ErrorStruct{"1109", "request-issue", 429, "Too many attempts"},
 }
